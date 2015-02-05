@@ -6,10 +6,6 @@ app.directive('feedItem',['feed_ser', function(feed_ser){
         },
         link: function (scope, element, attrs) {
             scope.data.item_time = jQuery.timeago(scope.data.item_time);
-            $('.feed-item').click(function(){
-                //alert('123');
-                console.log($(this).outerWidth());
-            });
         },
         templateUrl: 'templates/feedItem.html'
     };

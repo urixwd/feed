@@ -1,0 +1,3 @@
+<div ng-controller="FeedController" class="feed" ng-style="{height: zone_height }">
+    <feed-item ng-repeat="feed_item in feed_data | orderBy:'item_relevancy'" item="feed_item"></feed-item>
+</div>

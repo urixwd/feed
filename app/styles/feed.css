@@ -1,0 +1,153 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f0efea;
+    font-family: arial, sans-serif;
+}
+@media (max-width: 400px) {
+    .sm_font{
+        font-size: 12px;
+    }
+    .bg_font{
+        font-size: 14px;
+    }
+}
+@media (min-width: 401px) and (max-width: 500px) {
+    .sm_font{
+        font-size: 14px;
+    }
+    .bg_font{
+        font-size: 16px;
+    }
+}
+@media (min-width: 501px) {
+    .sm_font{
+        font-size: 18px;
+    }
+    .bg_font{
+        font-size: 20px;
+    }
+}
+/* general classes */
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.wrapper-95{
+    width: 95%;
+}
+.table-middle{
+    display: table;
+    vertical-align: middle;
+}
+.b700{
+    font-weight: 700;
+}
+.oh{
+    overflow: hidden;
+}
+/* feed div */
+
+.feed{
+    margin: 0 auto 0 auto;
+    min-width: 320px;
+    max-width: 550px;
+    overflow-y: scroll;
+}
+.box{
+    position: relative;
+    width: 100%;
+}
+.box:before{
+    content: "";
+    display: block;
+    padding-top: 106%; 	/* ratio */
+}
+.content{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    margin: 0 0 20px 0;
+    border-bottom: 2px solid #cccdd1;
+    border-right: 2px solid #cccdd1;
+}
+.content *{
+    /*border padding part of width*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+        .feed-item-top{
+            height: 15%;
+        }
+        .feed-item-top > div{
+            height: 100%;
+        }
+            .feed-item-header{
+                display: table-cell;
+                vertical-align: middle;
+                width: 88%;
+            }
+            .feed-item-profile{
+                display: table-cell;
+                vertical-align: middle;
+                width: 13%;
+            }
+            .feed-item-profile img{
+                width: 90%;
+            }
+            .feed-item-ago{
+                color: #716f6f;
+            }
+        .feed-item-pic{
+            width: 95%;
+            height: 60%;
+            display: block;
+            border: 1px solid #cccdd1;
+            border-bottom: 0;
+        }
+        .feed-item-below{
+            width: 95%;
+            height: 15%;
+            background-color: #f0efea;
+            border: 1px solid #cccdd1;
+        }
+        .feed-item-below > div{
+            height: 100%;
+        }
+            .feed-item-title{
+                display: table-cell;
+                vertical-align: middle;
+                font-weight: 700;
+                width: 83%;
+                cursor: pointer;
+                cursor: hand;
+            }
+            .feed-item-vote{
+                display: table-cell;
+                vertical-align: middle;
+                width: 17%;
+            }
+                .feed-item-vote img{
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: auto;
+                    margin-left: auto;
+                    width: 100%;
+                    height: auto;
+                    cursor: pointer;
+                    cursor: hand;
+                }
+        .feed-item-virality{
+            height: 10%;
+            color: #716f6f;
+        }
+        .feed-item-virality p{
+            line-height: 100%;
+
+        }

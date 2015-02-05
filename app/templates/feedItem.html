@@ -1,0 +1,25 @@
+<div class='box'>
+    <div class='content'>
+        <div class="feed-item-top center">
+            <div class="wrapper-95 center table-middle">
+                <div class="feed-item-profile"><img src="assets/images/profile_pic.png"></div>
+                <div class="feed-item-header">
+                    <div class="bg_font oh"><span class="b700">{{ ::data.user_name }}</span> shared this <span class="b700">slider</span></div>
+                    <div class="feed-item-ago sm_font">{{ ::data.item_time }}</div>
+                </div>
+            </div>
+        </div>
+        <img src="{{ ::data.item_img}}" class="feed-item-pic center">
+        <div class="feed-item-below center">
+            <div class="wrapper-95 center table-middle">
+                <div class="feed-item-title bg_font oh">{{ ::data.item_title }}</div>
+                <div class="feed-item-vote">
+                    <img src="assets/images/vote.png">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-95 center feed-item-virality sm_font">
+            <p>{{ ::data.item_votes }} votes · {{ ::data.item_comments }} comments · {{ ::data.item_shares }} shares</p>
+        </div>
+    </div>
+</div>
